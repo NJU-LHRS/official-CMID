@@ -1,0 +1,89 @@
+<h1 align="center"> Unified Self-Supervised Learning Framework for Remote Sensing Images </h1> 
+
+<h5 align="center"><em>Dilxat Muhtar, Xueliang Zhang, Pengfeng Xiao, Zhenshi Li, and Feng Gu</em></h5>
+
+## Introduction
+
+This is the official repository for the paper “Unified Self-Supervised Learning Framework for Remote Sensing Images”
+
+<figure>
+<div align="center">
+<img src=Figure/CMID.png width="90%">
+</div>
+</figure>
+
+## Models
+
+### Pre-trained Models
+
+|    Method    | Backbone  | Pre-trained Dataset | Pre-trained Epochs |                       Pretrained model                       |                        Backbone Only                         |
+| :----------: | :-------: | :-----------------: | :----------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|     CMID     | ResNet-50 |     MillionAID      |        200         | [NJU Box](https://box.nju.edu.cn/f/b29d28b279ab4724913b/?dl=1) | [NJU Box](https://box.nju.edu.cn/f/b2e7ad5d3aea4f569e82/?dl=1) |
+|     CMID     |  Swin-B   |     MillionAID      |        200         | [NJU Box](https://box.nju.edu.cn/f/8453a93f652c4c4eb054/?dl=1) | [NJU Box](https://box.nju.edu.cn/f/82a3c7ca7bfc4887aef8/?dl=1) |
+|     CMID     | ResNet-50 |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/578b015fc41d4119a2d5/?dl=1) | [NJU Box](https://box.nju.edu.cn/f/d12c2d027d2846119855/?dl=1) |
+|     CMID     |  Swin-B   |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/dce6cdc3882a46c8b286/?dl=1) | [NJU Box](https://box.nju.edu.cn/f/92d3d42dce07467f9d8e/?dl=1) |
+|     BYOL     | ResNet-50 |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/502b4a0d0f9b4b2d9a1c/?dl=1) |                              \                               |
+| Barlow-Twins | ResNet-50 |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/6696b1d415fc4d8080cd/?dl=1) |                              \                               |
+|   MoCo-v2    | ResNet-50 |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/f6984aab871949458079/?dl=1) |                              \                               |
+|     MAE      |   ViT-B   |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/5d1c95dcacc245509e0b/?dl=1) |                              \                               |
+|    SimMIM    |  ViTAE-B  |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/12fa42e0e0a84edbb473/?dl=1) |                              \                               |
+
+### Scene Classification (UCM 8:2)
+
+|      Method       |   Backbone   | Pre-trained Dataset | Pre-trained Epochs |  OA   |                           Weights                            |
+| :---------------: | :----------: | :-----------------: | :----------------: | :---: | :----------------------------------------------------------: |
+|       CMID        |  ResNet-50   |     MillionAID      |        200         | 99.22 | [NJU Box](https://box.nju.edu.cn/f/6c5cfbff667e45cea624/?dl=1) |
+|       CMID        |    Swin-B    |     MillionAID      |        200         | 99.48 | [NJU Box](https://box.nju.edu.cn/f/bcf1f1292a2044bcb10d/?dl=1) |
+|       BYOL        |  ResNet-50   |      ImageNet       |        200         | 99.22 | [NJU Box](https://box.nju.edu.cn/f/333c2125b4c645f69e8f/?dl=1) |
+|   Barlow-Twins    |  ResNet-50   |      ImageNet       |        300         | 99.16 | [NJU Box](https://box.nju.edu.cn/f/715cb236b97f4af69402/?dl=1) |
+|      MoCo-v2      |  ResNet-50   |      ImageNet       |        200         | 97.92 | [NJU Box](https://box.nju.edu.cn/f/20f42aa6fa894d90ac11/?dl=1) |
+|       SwAV        |  ResNet-50   |      ImageNet       |        200         | 98.96 | [NJU Box](https://box.nju.edu.cn/f/46bf899af9d840199f7e/?dl=1) |
+|       SeCo        |  ResNet-50   |       SeCo-1m       |        200         | 97.66 | [NJU Box](https://box.nju.edu.cn/f/b6aaf1ba169a442abada/?dl=1) |
+| ResNet-50-SEN12MS |  ResNet-50   |       SEN12MS       |        200         | 96.88 | [NJU Box](https://box.nju.edu.cn/f/7bf4a152de6d4c129f65/?dl=1) |
+|        MAE        |  ViT-B-RVSA  |     MillionAID      |        1600        | 98.56 | [NJU Box](https://box.nju.edu.cn/f/442c73fe6a9a4419b056/?dl=1) |
+|        MAE        | ViTAE-B-RVSA |     MillionAID      |        1600        | 97.12 | [NJU Box](https://box.nju.edu.cn/f/cc64099a725948eb99fe/?dl=1) |
+
+### Semantic Segmentation
+
+|      Method       |   Backbone   | Pre-trained Dataset | Pre-trained Epochs | mIoU (Potsdam) |                      Weights (Potsdam)                       | mIoU (VH) |                         Weights (VH)                         |
+| :---------------: | :----------: | :-----------------: | :----------------: | :------------: | :----------------------------------------------------------: | :-------: | :----------------------------------------------------------: |
+|       CMID        |  ResNet-50   |     MillionAID      |        200         |     87.35      | [NJU Box](https://box.nju.edu.cn/f/753e96b398f84152bd40/?dl=1) |   79.44   | [NJU Box](https://box.nju.edu.cn/f/5e0a62032a7a4c66aae4/?dl=1) |
+|       CMID        |    Swin-B    |     MillionAID      |        200         |     88.36      | [NJU Box](https://box.nju.edu.cn/f/cceb17ba88f44b7ea2b1/?dl=1) |   80.01   | [NJU Box](https://box.nju.edu.cn/f/f4cb2a1940594865890c/?dl=1) |
+|       BYOL        |  ResNet-50   |      ImageNet       |        200         |     85.54      | [NJU Box](https://box.nju.edu.cn/f/95ac4ce4a9b541d38f02/?dl=1) |   72.52   |                                                              |
+|   Barlow-Twins    |  ResNet-50   |      ImageNet       |        300         |     83.16      | [NJU Box](https://box.nju.edu.cn/f/bfb1b6ce68d04ff79f85/?dl=1) |   71.86   |                                                              |
+|      MoCo-v2      |  ResNet-50   |      ImageNet       |        200         |     87.02      | [NJU Box](https://box.nju.edu.cn/f/be8946e4e5f1405e8fda/?dl=1) |   79.16   | [NJU Box](https://box.nju.edu.cn/f/e3562a0c2fcf43a3b063/?dl=1) |
+|       SwAV        |  ResNet-50   |      ImageNet       |        200         |     85.74      | [NJU Box](https://box.nju.edu.cn/f/93d58a4ff7934c92947c/?dl=1) |   73.76   | [NJU Box](https://box.nju.edu.cn/f/994fd0346292441fbdd8/?dl=1) |
+|       SeCo        |  ResNet-50   |       SeCo-1m       |        200         |     85.82      | [NJU Box](https://box.nju.edu.cn/f/b4ce95a18a904084baed/?dl=1) |   78.59   | [NJU Box](https://box.nju.edu.cn/f/9b06e6841868495bbee2/?dl=1) |
+| ResNet-50-SEN12MS |  ResNet-50   |       SEN12MS       |        200         |     83.17      | [NJU Box](https://box.nju.edu.cn/f/f483f9dd03fb496b9f01/?dl=1) |   73.99   | [NJU Box](https://box.nju.edu.cn/f/b071c6dec61d4393b69c/?dl=1) |
+|        MAE        |  ViT-B-RVSA  |     MillionAID      |        1600        |     86.37      | [NJU Box](https://box.nju.edu.cn/f/9f41cda6a04b441fb116/?dl=1) |   77.29   | [NJU Box](https://box.nju.edu.cn/f/cf2c7092e38c4504b60d/?dl=1) |
+|        MAE        | ViTAE-B-RVSA |     MillionAID      |        1600        |     86.61      | [NJU Box](https://box.nju.edu.cn/f/f99cd7703d11403fa7ac/?dl=1) |   78.17   | [NJU Box](https://box.nju.edu.cn/f/5d96a3ec3cf1497dad35/?dl=1) |
+
+### Object Detection
+
+|    Method    |   Backbone   | Pre-trained Dataset | Pre-trained Epochs |  mAP  |                           Weights                            |
+| :----------: | :----------: | :-----------------: | :----------------: | :---: | :----------------------------------------------------------: |
+|     CMID     |  ResNet-50   |     MillionAID      |        200         | 76.63 | [NJU Box](https://box.nju.edu.cn/f/ad596092342f42f89da8/?dl=1) |
+|     CMID     |    Swin-B    |     MillionAID      |        200         | 77.36 | [NJU Box](https://box.nju.edu.cn/f/56428634781348539763/?dl=1) |
+|     BYOL     |  ResNet-50   |      ImageNet       |        200         | 73.62 | [NJU Box](https://box.nju.edu.cn/f/a0c217c9b0a44434986b/?dl=1) |
+| Barlow-Twins |  ResNet-50   |      ImageNet       |        300         | 67.54 | [NJU Box](https://box.nju.edu.cn/f/bd780fb7ef414e12b419/?dl=1) |
+|   MoCo-v2    |  ResNet-50   |      ImageNet       |        200         | 73.25 | [NJU Box](https://box.nju.edu.cn/f/0eee642365474eb1a73d/?dl=1) |
+|     SwAV     |  ResNet-50   |      ImageNet       |        200         | 73.30 | [NJU Box](https://box.nju.edu.cn/f/c5875db670f145498231/?dl=1) |
+|     MAE      |  ViT-B-RVSA  |     MillionAID      |        1600        | 78.08 | [NJU Box](https://box.nju.edu.cn/f/19aa5f84c7e945519d8d/?dl=1) |
+|     MAE      | ViTAE-B-RVSA |     MillionAID      |        1600        | 76.96 | [NJU Box](https://box.nju.edu.cn/f/618643cf52ff43bbbedd/?dl=1) |
+
+### Change Detection
+
+|      Method       | Backbone  | Pre-trained Dataset | Pre-trained Epochs |  mF1  |                           Weights                            |
+| :---------------: | :-------: | :-----------------: | :----------------: | :---: | :----------------------------------------------------------: |
+|       CMID        | ResNet-50 |     MillionAID      |        200         | 96.95 | [NJU Box](https://box.nju.edu.cn/f/42bc816b650c49208608/?dl=1) |
+|       CMID        |  Swin-B   |     MillionAID      |        200         |       |                                                              |
+|       BYOL        | ResNet-50 |      ImageNet       |        200         | 96.30 | [NJU Box](https://box.nju.edu.cn/f/a8e9ee8e88114a60bdaf/?dl=1) |
+|   Barlow-Twins    | ResNet-50 |      ImageNet       |        300         | 95.63 | [NJU Box](https://box.nju.edu.cn/f/4845c1e1273b47bc8a58/?dl=1) |
+|      MoCo-v2      | ResNet-50 |      ImageNet       |        200         | 96.05 | [NJU Box](https://box.nju.edu.cn/f/1f6c7ab33a7440aba360/?dl=1) |
+|       SwAV        | ResNet-50 |      ImageNet       |        200         | 95.89 | [NJU Box](https://box.nju.edu.cn/f/1fdbe3159ec8497786a4/?dl=1) |
+|       SeCo        | ResNet-50 |       SeCo-1m       |        200         | 96.26 | [NJU Box](https://box.nju.edu.cn/f/ffd1db53aea94cc1b51a/?dl=1) |
+| ResNet-50-SEN12MS | ResNet-50 |       SEN12MS       |        200         | 95.88 | [NJU Box](https://box.nju.edu.cn/f/62f1fd9636db4ee287eb/?dl=1) |
+
+## Acknowledgement
+
++ Many thanks to the following repos: [Remote-Sensing-RVSA](https://github.com/ViTAE-Transformer/Remote-Sensing-RVSA)、[iBOT](https://github.com/bytedance/ibot)、[core-pytorch-utils](https://github.com/serend1p1ty/core-pytorch-utils)、[solo-learn](https://github.com/vturrisi/solo-learn)
