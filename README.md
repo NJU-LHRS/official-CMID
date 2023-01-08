@@ -49,8 +49,8 @@ This is the official repository for the paper “Unified Self-Supervised Learnin
 | :---------------: | :----------: | :-----------------: | :----------------: | :------------: | :----------------------------------------------------------: | :-------: | :----------------------------------------------------------: |
 |       CMID        |  ResNet-50   |     MillionAID      |        200         |     87.35      | [NJU Box](https://box.nju.edu.cn/f/753e96b398f84152bd40/?dl=1) |   79.44   | [NJU Box](https://box.nju.edu.cn/f/5e0a62032a7a4c66aae4/?dl=1) |
 |       CMID        |    Swin-B    |     MillionAID      |        200         |     88.36      | [NJU Box](https://box.nju.edu.cn/f/cceb17ba88f44b7ea2b1/?dl=1) |   80.01   | [NJU Box](https://box.nju.edu.cn/f/f4cb2a1940594865890c/?dl=1) |
-|       BYOL        |  ResNet-50   |      ImageNet       |        200         |     85.54      | [NJU Box](https://box.nju.edu.cn/f/95ac4ce4a9b541d38f02/?dl=1) |   72.52   |                                                              |
-|   Barlow-Twins    |  ResNet-50   |      ImageNet       |        300         |     83.16      | [NJU Box](https://box.nju.edu.cn/f/bfb1b6ce68d04ff79f85/?dl=1) |   71.86   |                                                              |
+|       BYOL        |  ResNet-50   |      ImageNet       |        200         |     85.54      | [NJU Box](https://box.nju.edu.cn/f/95ac4ce4a9b541d38f02/?dl=1) |   72.52   | [NJU Box](https://box.nju.edu.cn/f/ae6a898cb4ad489faed8/?dl=1) |
+|   Barlow-Twins    |  ResNet-50   |      ImageNet       |        300         |     83.16      | [NJU Box](https://box.nju.edu.cn/f/bfb1b6ce68d04ff79f85/?dl=1) |   71.86   | [NJU Box](https://box.nju.edu.cn/f/6c2b4b4178f040d09c2a/?dl=1) |
 |      MoCo-v2      |  ResNet-50   |      ImageNet       |        200         |     87.02      | [NJU Box](https://box.nju.edu.cn/f/be8946e4e5f1405e8fda/?dl=1) |   79.16   | [NJU Box](https://box.nju.edu.cn/f/e3562a0c2fcf43a3b063/?dl=1) |
 |       SwAV        |  ResNet-50   |      ImageNet       |        200         |     85.74      | [NJU Box](https://box.nju.edu.cn/f/93d58a4ff7934c92947c/?dl=1) |   73.76   | [NJU Box](https://box.nju.edu.cn/f/994fd0346292441fbdd8/?dl=1) |
 |       SeCo        |  ResNet-50   |       SeCo-1m       |        200         |     85.82      | [NJU Box](https://box.nju.edu.cn/f/b4ce95a18a904084baed/?dl=1) |   78.59   | [NJU Box](https://box.nju.edu.cn/f/9b06e6841868495bbee2/?dl=1) |
@@ -58,7 +58,7 @@ This is the official repository for the paper “Unified Self-Supervised Learnin
 |        MAE        |  ViT-B-RVSA  |     MillionAID      |        1600        |     86.37      | [NJU Box](https://box.nju.edu.cn/f/9f41cda6a04b441fb116/?dl=1) |   77.29   | [NJU Box](https://box.nju.edu.cn/f/cf2c7092e38c4504b60d/?dl=1) |
 |        MAE        | ViTAE-B-RVSA |     MillionAID      |        1600        |     86.61      | [NJU Box](https://box.nju.edu.cn/f/f99cd7703d11403fa7ac/?dl=1) |   78.17   | [NJU Box](https://box.nju.edu.cn/f/5d96a3ec3cf1497dad35/?dl=1) |
 
-### Object Detection
+### Object Detection (DOTA V1.0 Dataset)
 
 |    Method    |   Backbone   | Pre-trained Dataset | Pre-trained Epochs |  mAP  |                           Weights                            |
 | :----------: | :----------: | :-----------------: | :----------------: | :---: | :----------------------------------------------------------: |
@@ -71,12 +71,12 @@ This is the official repository for the paper “Unified Self-Supervised Learnin
 |     MAE      |  ViT-B-RVSA  |     MillionAID      |        1600        | 78.08 | [NJU Box](https://box.nju.edu.cn/f/19aa5f84c7e945519d8d/?dl=1) |
 |     MAE      | ViTAE-B-RVSA |     MillionAID      |        1600        | 76.96 | [NJU Box](https://box.nju.edu.cn/f/618643cf52ff43bbbedd/?dl=1) |
 
-### Change Detection
+### Change Detection (CDD Dataset)
 
 |      Method       | Backbone  | Pre-trained Dataset | Pre-trained Epochs |  mF1  |                           Weights                            |
 | :---------------: | :-------: | :-----------------: | :----------------: | :---: | :----------------------------------------------------------: |
 |       CMID        | ResNet-50 |     MillionAID      |        200         | 96.95 | [NJU Box](https://box.nju.edu.cn/f/42bc816b650c49208608/?dl=1) |
-|       CMID        |  Swin-B   |     MillionAID      |        200         |       |                                                              |
+|       CMID        |  Swin-B   |     MillionAID      |        200         | 97.11 | [NJU Box](https://box.nju.edu.cn/f/6837337314984975a4c0/?dl=1) |
 |       BYOL        | ResNet-50 |      ImageNet       |        200         | 96.30 | [NJU Box](https://box.nju.edu.cn/f/a8e9ee8e88114a60bdaf/?dl=1) |
 |   Barlow-Twins    | ResNet-50 |      ImageNet       |        300         | 95.63 | [NJU Box](https://box.nju.edu.cn/f/4845c1e1273b47bc8a58/?dl=1) |
 |      MoCo-v2      | ResNet-50 |      ImageNet       |        200         | 96.05 | [NJU Box](https://box.nju.edu.cn/f/1f6c7ab33a7440aba360/?dl=1) |
