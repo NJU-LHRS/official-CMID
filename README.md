@@ -99,3 +99,7 @@ This is the official repository for the paper “Unified Self-Supervised Learnin
 ## Acknowledgement
 
 + Many thanks to the following repos: [Remote-Sensing-RVSA](https://github.com/ViTAE-Transformer/Remote-Sensing-RVSA)、[iBOT](https://github.com/bytedance/ibot)、[core-pytorch-utils](https://github.com/serend1p1ty/core-pytorch-utils)、[solo-learn](https://github.com/vturrisi/solo-learn)
+
+## Statement
+
++ This project is strictly forbidden for any commercial purpose. Any questions please contact [pumpKin-Co](https://github.com/pUmpKin-Co)
