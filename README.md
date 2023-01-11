@@ -2,16 +2,21 @@
 
 <h5 align="center"><em>Dilxat Muhtar, Xueliang Zhang, Pengfeng Xiao, Zhenshi Li, and Feng Gu</em></h5>
 
+## News
+
++ **[Jan 11 2023]**: All the pre-trained models and checkpoints of various downstream tasks are released. The code will be uploaded after the paper has been accepted.
+
 ## Introduction
 
 This is the official repository for the paper “Unified Self-Supervised Learning Framework for Remote Sensing Images”
+
+**Abstract:** Self-supervised learning (SSL) has attracted increased interest in the remote sensing and earth observation communities owing to its ability to learn task-agnostic representations without human-annotated labels. Nevertheless, most existing remote sensing SSL methods are limited to learning either global semantic separable or local spatial perceptible representations. We argue that this learning strategy is suboptimal in the realm of remote sensing, since the required representations for different downstream remote sensing tasks are often varied and complex. In this study, we proposed a unified SSL framework that is better suited for remote sensing image (RSI) representation learning. The proposed SSL framework, Contrastive Mask Image Distillation (CMID), is capable of learning representations with both global semantic separability and local spatial perceptibility by combining contrastive learning (CL) with masked image modeling (MIM) in a self-distillation way. Furthermore, our CMID learning framework is architecture-agnostic, which is compatible with both convolutional neural networks (CNN) and vision transformers, allowing CMID to be easily adapted to a variety of deep learning applications for RSI. Comprehensive experiments have been carried out on four downstream tasks (i.e. scene classification, semantic segmentation, object-detection, and change detection) and the results show that models pre-trained using CMID achieve better performance than other state-of-the-art SSL methods on multiple downstream tasks.
 
 <figure>
 <div align="center">
 <img src=Figure/CMID.png width="90%">
 </div>
 </figure>
-
 ## Models
 
 ### Pre-trained Models

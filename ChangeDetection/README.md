@@ -63,7 +63,7 @@ python eval.py \
 --path [model path]
 
 python eval.py \
---backbone 'swin_base' --dataset 'cdd' --mode 'proposed' \
+--backbone 'swin_base' --dataset 'cdd' --mode 'swin_base' \
 --path [model path]
 ```
 
