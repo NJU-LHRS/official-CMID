@@ -7,7 +7,9 @@
   <a href="#Introduction">Introduction</a> |
   <a href="#Pre-trained Models">Pre-trained Models</a> |
   <a href="#Acknowledgement">Acknowledgement</a> |
+  <a href="#Statement">Statement</a>
 </p >
+
 
 ## News
 
@@ -102,4 +104,4 @@ This is the official repository for the paper “Unified Self-Supervised Learnin
 
 ## Statement
 
-+ This project is strictly forbidden for any commercial purpose. Any questions please contact [pumpKin-Co](https://github.com/pUmpKin-Co)
++ This project is strictly forbidden for any commercial purpose. Any questions please contact [pumpKin-Co](https://github.com/pUmpKin-Co).
