@@ -17,8 +17,6 @@ This is the official repository for the paper “Unified Self-Supervised Learnin
 <img src=Figure/CMID.png width="90%">
 </div>
 </figure>
-## Models
-
 ### Pre-trained Models
 
 |    Method    | Backbone  | Pre-trained Dataset | Pre-trained Epochs |                       Pretrained model                       |                        Backbone Only                         |
