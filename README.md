@@ -2,6 +2,13 @@
 
 <h5 align="center"><em>Dilxat Muhtar, Xueliang Zhang, Pengfeng Xiao, Zhenshi Li, and Feng Gu</em></h5>
 
+<p align="center">
+  <a href="#News">News</a> |
+  <a href="#Introduction">Introduction</a> |
+  <a href="#Pre-trained Models">Pre-trained Models</a> |
+  <a href="#Acknowledgement">Acknowledgement</a> |
+</p >
+
 ## News
 
 + **[Jan 11 2023]**: All the pre-trained models and checkpoints of various downstream tasks are released. The code will be uploaded after the paper has been accepted.
@@ -17,7 +24,7 @@ This is the official repository for the paper “Unified Self-Supervised Learnin
 <img src=Figure/CMID.png width="90%">
 </div>
 </figure>
-### Pre-trained Models
+## Pre-trained Models
 
 |    Method    | Backbone  | Pre-trained Dataset | Pre-trained Epochs |                       Pretrained model                       |                        Backbone Only                         |
 | :----------: | :-------: | :-----------------: | :----------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
