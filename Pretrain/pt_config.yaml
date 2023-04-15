@@ -1,0 +1,82 @@
+# data
+size: [224, 224]
+transform_type: parallel
+num_classes: 6
+dataset: potsdam
+
+# model
+backbone: resnet50
+base_model: moco
+in_chans: 3
+predictor_hidden_dim: 512
+out_dim: 256
+base_momentum: 0.996
+final_momentum: 1
+temperature: 0.2  
+queue_size: 65536  
+mask_stage: 0
+out_stage: 4
+kernel_size: 1
+in_channels: 2048
+out_stride: 32
+model_warmup_epoch: -1  
+global_branch: True  
+num_matches: 20  
+
+hidden_dim: 2048  
+online_temp: 0.1 
+branch_temp: 0.07   
+warmup_branch_temp: 0.04  
+warmup_branch_temp_epochs: 50  
+center_momentum: 0.9
+class_feat_size: 2048
+use_bn: True  
+num_layers: 3  
+bottleneck_dim: 256  
+
+# Mask Parameter
+mask_patch_size: 32
+mask_ratio: 0.6
+mask_color: mean
+
+# loss Parameter
+loss_weight: 1.0
+reduction: none
+activate: sigmoid
+alpha: 0.2
+focal_gamma: 1.0
+residual: False
+fft_weight: 1.0
+fft_focal: True
+fft_unmask_weight: 0.001
+fft_unmask_replace: mixed
+encoder_in_channels: 3
+unmask_weight: 0.
+
+# optimizer
+optimizer: adan
+lr: 0.001
+wd: 0.02
+epochs: 400
+max_grad_norm: null
+
+# scheduler
+name: cosine
+min_lr: 0.000001
+warmup_epochs: 10
+warmup_method: linear
+warmup_factor: 0.01
+decay_epochs: 30
+decay_rate: 0.1
+multisteps: []
+gamma: 0.1
+
+# knn evalutaion
+k: 20
+T: 0.07
+distance_fx: euclidean
+
+# tine-tuning classifier
+ft_classify: False
+segmentation: False
+ignore_index: 255

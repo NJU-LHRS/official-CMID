@@ -6,12 +6,17 @@
   <a href="#News">News</a> |
   <a href="#Introduction">Introduction</a> |
   <a href="#Pre-trained Models">Pre-trained Models</a> |
+  <a href="#Usage">Usage</a>|
   <a href="#Acknowledgement">Acknowledgement</a> |
   <a href="#Statement">Statement</a>
 </p >
 
 
 ## News
+
++ **\[Apr 15 2023]**: All of the codes have been released.
+
++ **[Apr 14 2023]**: This paper has been accepted by IEEE TGRS!
 
 + **[Jan 11 2023]**: All the pre-trained models and checkpoints of various downstream tasks are released. The code will be uploaded after the paper has been accepted.
 
@@ -30,7 +35,7 @@ This is the official repository for the paper “Unified Self-Supervised Learnin
 
 ## Pre-trained Models
 
-|    Method    | Backbone  | Pre-trained Dataset | Pre-trained Epochs |                       Pretrained model                       |                        Backbone Only                         |
+|    Method    | Backbone  | Pre-trained Dataset | Pre-trained Epochs |                      Pre-trained model                       |                        Backbone Only                         |
 | :----------: | :-------: | :-----------------: | :----------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |     CMID     | ResNet-50 |     MillionAID      |        200         | [NJU Box](https://box.nju.edu.cn/f/b29d28b279ab4724913b/?dl=1) | [NJU Box](https://box.nju.edu.cn/f/b2e7ad5d3aea4f569e82/?dl=1) |
 |     CMID     |  Swin-B   |     MillionAID      |        200         | [NJU Box](https://box.nju.edu.cn/f/8453a93f652c4c4eb054/?dl=1) | [NJU Box](https://box.nju.edu.cn/f/82a3c7ca7bfc4887aef8/?dl=1) |
@@ -40,7 +45,7 @@ This is the official repository for the paper “Unified Self-Supervised Learnin
 | Barlow-Twins | ResNet-50 |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/6696b1d415fc4d8080cd/?dl=1) |                              \                               |
 |   MoCo-v2    | ResNet-50 |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/f6984aab871949458079/?dl=1) |                              \                               |
 |     MAE      |   ViT-B   |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/5d1c95dcacc245509e0b/?dl=1) |                              \                               |
-|    SimMIM    |  ViTAE-B  |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/12fa42e0e0a84edbb473/?dl=1) |                              \                               |
+|    SimMIM    |  Swin-B   |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/12fa42e0e0a84edbb473/?dl=1) |                              \                               |
 
 ### Scene Classification (UCM 8:2)
 
@@ -98,9 +103,18 @@ This is the official repository for the paper “Unified Self-Supervised Learnin
 |       SeCo        | ResNet-50 |       SeCo-1m       |        200         | 96.26 | [NJU Box](https://box.nju.edu.cn/f/ffd1db53aea94cc1b51a/?dl=1) |
 | ResNet-50-SEN12MS | ResNet-50 |       SEN12MS       |        200         | 95.88 | [NJU Box](https://box.nju.edu.cn/f/62f1fd9636db4ee287eb/?dl=1) |
 
+# Usage
+
++ Details about pre-training from scratch please refer to [pre-training instructions](./Pretrain/README.md).
++ After pre-training (or downloading the pre-trained models), please make sure extract the backbone using [extract.py](./extract.py).
++ Details about fine-tuning on the UCM scene classification task please refer to [classification instructions](./Pretrain/README.md).
++ Details about fine-tuning on semantic segmentation task please refer to [sementic segmentation instructions](./SemanticSegmentation/README.md).
++ Details about fine-tuning on the DOTA OBB detection task please refer to [OBB detection instructions](./Detection/README.md).
++ Details bout fine-tuning on the CDD change detection task please refer to [change detection instructions](./ChangeDetection/README.md).
+
 ## Acknowledgement
 
-+ Many thanks to the following repos: [Remote-Sensing-RVSA](https://github.com/ViTAE-Transformer/Remote-Sensing-RVSA)、[iBOT](https://github.com/bytedance/ibot)、[core-pytorch-utils](https://github.com/serend1p1ty/core-pytorch-utils)、[solo-learn](https://github.com/vturrisi/solo-learn)
++ Many thanks to the following repos: [Remote-Sensing-RVSA](https://github.com/ViTAE-Transformer/Remote-Sensing-RVSA)、[iBOT](https://github.com/bytedance/ibot)、[core-pytorch-utils](https://github.com/serend1p1ty/core-pytorch-utils)、[solo-learn](https://github.com/vturrisi/solo-learn)、[timm](https://github.com/huggingface/pytorch-image-models)、[Adan](https://github.com/sail-sg/Adan).
 
 ## Statement
 
