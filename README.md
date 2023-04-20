@@ -10,9 +10,16 @@
   <a href="#Acknowledgement">Acknowledgement</a> |
   <a href="#Statement">Statement</a>
 </p >
-
+<p align="center">
+<a href="https://arxiv.org/abs/2304.09670"><img src="https://img.shields.io/badge/Paper-arxiv-red"></a>
+<a href="https://ieeexplore.ieee.org/document/10105625"><img src="https://img.shields.io/badge/Paper-IEEE%20TGRS-red"></a>
+</p>
 
 ## News
+
++ **\[Apr 20 2023]**: The IEEE TGRS eraly access version can be found at [this website](https://ieeexplore.ieee.org/document/10105625).
+
++ **\[Apr 19 2023]**: This paper have beed released at [arxiv](https://arxiv.org/abs/2304.09670).
 
 + **\[Apr 15 2023]**: All of the codes have been released.
 
