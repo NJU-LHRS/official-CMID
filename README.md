@@ -17,7 +17,7 @@
 
 ## News
 
-+ **\[Apr 20 2023]**: The IEEE TGRS eraly access version can be found at [this website](https://ieeexplore.ieee.org/document/10105625).
++ **\[Apr 20 2023]**: The IEEE TGRS early access version can be found at [this website](https://ieeexplore.ieee.org/document/10105625).
 
 + **\[Apr 19 2023]**: This paper have beed released at [arxiv](https://arxiv.org/abs/2304.09670).
 
