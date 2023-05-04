@@ -14,8 +14,9 @@
 <a href="https://arxiv.org/abs/2304.09670"><img src="https://img.shields.io/badge/Paper-arxiv-red"></a>
 <a href="https://ieeexplore.ieee.org/document/10105625"><img src="https://img.shields.io/badge/Paper-IEEE%20TGRS-red"></a>
 </p>
-
 ## News
+
++ **\[May 5 2023\]:**  Updated the acknowledgment. Many thanks to [A2MIM](https://github.com/Westlake-AI/A2MIM) and [OpenMixup](https://github.com/Westlake-AI/openmixup) for their awesome implementations of RGB mean input and the Focal Frequency loss!
 
 + **\[Apr 20 2023]**: The IEEE TGRS early access version can be found at [this website](https://ieeexplore.ieee.org/document/10105625).
 
@@ -121,7 +122,7 @@ This is the official repository for the paper “CMID: A Unified Self-Supervised
 
 ## Acknowledgement
 
-+ Many thanks to the following repos: [Remote-Sensing-RVSA](https://github.com/ViTAE-Transformer/Remote-Sensing-RVSA)、[iBOT](https://github.com/bytedance/ibot)、[core-pytorch-utils](https://github.com/serend1p1ty/core-pytorch-utils)、[solo-learn](https://github.com/vturrisi/solo-learn)、[timm](https://github.com/huggingface/pytorch-image-models)、[Adan](https://github.com/sail-sg/Adan).
++ Many thanks to the following repos: [Remote-Sensing-RVSA](https://github.com/ViTAE-Transformer/Remote-Sensing-RVSA)、[iBOT](https://github.com/bytedance/ibot)、[A2MIM](https://github.com/Westlake-AI/A2MIM)、[core-pytorch-utils](https://github.com/serend1p1ty/core-pytorch-utils)、[solo-learn](https://github.com/vturrisi/solo-learn)、[OpenMixup](https://github.com/Westlake-AI/openmixup)、[timm](https://github.com/huggingface/pytorch-image-models)、[Adan](https://github.com/sail-sg/Adan).
 
 ## Statement
 
