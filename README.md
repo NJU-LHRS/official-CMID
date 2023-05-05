@@ -14,7 +14,9 @@
 <a href="https://arxiv.org/abs/2304.09670"><img src="https://img.shields.io/badge/Paper-arxiv-red"></a>
 <a href="https://ieeexplore.ieee.org/document/10105625"><img src="https://img.shields.io/badge/Paper-IEEE%20TGRS-red"></a>
 </p>
+
 ## News
+
 + **\[May 5 2023\]:** The IEEE TGRS published version can be found at [IEEE Xplore](https://ieeexplore.ieee.org/document/10105625?source=authoralert).
 
 + **\[May 4 2023\]:**  Updated the acknowledgment. Many thanks to [A2MIM](https://github.com/Westlake-AI/A2MIM) and [OpenMixup](https://github.com/Westlake-AI/openmixup) for their awesome implementations of RGB mean input and the Focal Frequency loss!
