@@ -129,4 +129,26 @@ This is the official repository for the paper “CMID: A Unified Self-Supervised
 
 ## Statement
 
++ If you find our work is useful, please give us 🌟 in GitHub and cite our paper in the following BibTex format:
+
+    ~~~
+    @article{muhtar2023cmid,
+      title={CMID: A Unified Self-Supervised Learning Framework for Remote Sensing Image Understanding},
+      author={Muhtar, Dilxat and Zhang, Xueliang and Xiao, Pengfeng and Li, Zhenshi and Gu, Feng},
+      journal={IEEE Transactions on Geoscience and Remote Sensing},
+      year={2023},
+      publisher={IEEE}
+    }
+    
+    @article{muhtar2022index,
+      title={Index your position: A novel self-supervised learning method for remote sensing images semantic segmentation},
+      author={Muhtar, Dilxat and Zhang, Xueliang and Xiao, Pengfeng},
+      journal={IEEE Transactions on Geoscience and Remote Sensing},
+      volume={60},
+      pages={1--11},
+      year={2022},
+      publisher={IEEE}
+    }
+    ~~~
+
 + This project is strictly forbidden for any commercial purpose. Any questions please contact [pumpKin-Co](https://github.com/pUmpKin-Co).
