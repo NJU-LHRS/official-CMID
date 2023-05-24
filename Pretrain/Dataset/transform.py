@@ -226,53 +226,6 @@ class EvalTransform:
             return self.transform(image=img)["image"], location
 
 
-class MaskTransform:
-    def __init__(self,
-                 img_size: Optional[Union[int, Tuple]] = 224,
-                 hp_filter_sigma: float = 0.5,
-                 grid_mask_prob: float = 0.8,
-                 grid_mask_ratio: float = 0.8,
-                 focal_mask_ratio: float = 0.3,
-                 channel_mask_ratio: float = 0.3,
-                 channel_mask_prob: float = 0.7):
-        self.img_size = img_size if isinstance(img_size, int) else img_size[0]
-        self.spatial_mask_prob = grid_mask_prob
-        self.channel_mask_prob = channel_mask_prob
-        self.standard_transform = A.Compose(
-            [
-                A.RandomResizedCrop(self.img_size, self.img_size, scale=(0.67, 1.), ratio=(3. / 4., 4. / 3.)),
-                A.HorizontalFlip(p=0.5),
-                A.ColorJitter(0.4, 0.4, 0.2, 0.1, p=0.8),
-                A.ToGray(p=0.2),
-                A.GaussianBlur(sigma_limit=(hp_filter_sigma, hp_filter_sigma), always_apply=True),
-                A.Normalize(mean=[0.33797, 0.3605, 0.3348], std=[0.1359, 0.1352, 0.1407]),
-                ToTensorV2()
-            ]
-        )
-
-        self.grid_mask_generator = MaskGenerator(input_size=self.img_size, mask_ratio=grid_mask_ratio)
-        self.channel_mask_generator = MaskGenerator(input_size=self.img_size, mask_ratio=channel_mask_ratio,
-                                                    mask_channel=3)
-        self.focal_mask_generator = FocalMaskGenerator(img_size=img_size, focal_mask_ratio=focal_mask_ratio)
-        self.gaussian_noise = GaussianNoiseGenerator(img_size=img_size)
-
-    def __call__(self, img: np.ndarray) -> torch.Tensor:
-        img = self.standard_transform(image=img)["image"]
-        if np.random.random() <= self.spatial_mask_prob:
-            mask = self.grid_mask_generator()
-            gauss = self.gaussian_noise(False)
-            img = img * mask + mask * gauss
-        else:
-            img = self.focal_mask_generator(img)
-
-        if np.random.random() <= self.channel_mask_prob:
-            mask = self.channel_mask_generator()
-            gauss = self.gaussian_noise(True)
-            img = img * mask + mask * gauss
-
-        return img.float()
-
-
 class BlockwiseMaskGenerator(object):
     """Generate random block for the image.
 
