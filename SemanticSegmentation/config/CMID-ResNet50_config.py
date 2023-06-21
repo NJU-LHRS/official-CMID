@@ -13,7 +13,7 @@ cudnn_benchmark = True
 
 optimizer = dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.0001)
 
-optimizer_config = None
+optimizer_config = dict(type='Fp16OptimizerHook', distributed=False)
 
 lr_config = dict(
     policy='CosineAnnealing',
