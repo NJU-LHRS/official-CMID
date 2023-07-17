@@ -3,12 +3,12 @@
 <h5 align="center"><em>Dilxat Muhtar, Xueliang Zhang, Pengfeng Xiao, Zhenshi Li, and Feng Gu</em></h5>
 
 <p align="center">
-  <a href="#News">News</a> |
-  <a href="#Introduction">Introduction</a> |
-  <a href="#Pre-trained Models">Pre-trained Models</a> |
-  <a href="#Usage">Usage</a>|
-  <a href="#Acknowledgement">Acknowledgement</a> |
-  <a href="#Statement">Statement</a>
+  <a href="##News">News</a> |
+  <a href="##Introduction">Introduction</a> |
+  <a href="##Pre-trained Models">Pre-trained Models</a> |
+  <a href="##Usage">Usage</a>|
+  <a href="##Acknowledgement">Acknowledgement</a> |
+  <a href="##Statement">Statement</a>
 </p >
 <p align="center">
 <a href="https://arxiv.org/abs/2304.09670"><img src="https://img.shields.io/badge/Paper-arxiv-red"></a>
@@ -16,7 +16,8 @@
 </p>
 
 
-# News
+
+## News
 
 + **\[May 5 2023\]:** The IEEE TGRS published version can be found at [IEEE Xplore](https://ieeexplore.ieee.org/document/10105625?source=authoralert).
 
@@ -34,7 +35,7 @@
 
     
 
-# Introduction
+## Introduction
 
 This is the official repository for the paper “CMID: A Unified Self-Supervised Learning Framework for Remote Sensing Image Understanding”
 
@@ -47,7 +48,7 @@ This is the official repository for the paper “CMID: A Unified Self-Supervised
 </figure>
 
 
-# Pre-trained Models
+## Pre-trained Models
 
 |    Method    | Backbone  | Pre-trained Dataset | Pre-trained Epochs |                      Pre-trained model                       |                        Backbone Only                         |
 | :----------: | :-------: | :-----------------: | :----------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -61,7 +62,7 @@ This is the official repository for the paper “CMID: A Unified Self-Supervised
 |     MAE      |   ViT-B   |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/5d1c95dcacc245509e0b/?dl=1) |                              \                               |
 |    SimMIM    |  Swin-B   |       Potsdam       |        400         | [NJU Box](https://box.nju.edu.cn/f/12fa42e0e0a84edbb473/?dl=1) |                              \                               |
 
-Scene Classification (UCM 8:2)
+### Scene Classification (UCM 8:2)
 
 |      Method       |   Backbone   | Pre-trained Dataset | Pre-trained Epochs |  OA   |                           Weights                            |
 | :---------------: | :----------: | :-----------------: | :----------------: | :---: | :----------------------------------------------------------: |
@@ -117,7 +118,9 @@ Scene Classification (UCM 8:2)
 |       SeCo        | ResNet-50 |       SeCo-1m       |        200         | 96.26 | [NJU Box](https://box.nju.edu.cn/f/ffd1db53aea94cc1b51a/?dl=1) |
 | ResNet-50-SEN12MS | ResNet-50 |       SEN12MS       |        200         | 95.88 | [NJU Box](https://box.nju.edu.cn/f/62f1fd9636db4ee287eb/?dl=1) |
 
-# Usage
+
+
+## Usage
 
 + Details about pre-training from scratch please refer to [pre-training instructions](./Pretrain/README.md).
 + After pre-training (or downloading the pre-trained models), please make sure extract the backbone using [extract.py](./extract.py).
@@ -126,11 +129,15 @@ Scene Classification (UCM 8:2)
 + Details about fine-tuning on the DOTA OBB detection task please refer to [OBB detection instructions](./Detection/README.md).
 + Details bout fine-tuning on the CDD change detection task please refer to [change detection instructions](./ChangeDetection/README.md).
 
-# Acknowledgement
+
+
+## Acknowledgement
 
 + Many thanks to the following repos: [Remote-Sensing-RVSA](https://github.com/ViTAE-Transformer/Remote-Sensing-RVSA)、[iBOT](https://github.com/bytedance/ibot)、[A2MIM](https://github.com/Westlake-AI/A2MIM)、[core-pytorch-utils](https://github.com/serend1p1ty/core-pytorch-utils)、[solo-learn](https://github.com/vturrisi/solo-learn)、[OpenMixup](https://github.com/Westlake-AI/openmixup)、[timm](https://github.com/huggingface/pytorch-image-models)、[Adan](https://github.com/sail-sg/Adan).
 
-# Statement
+
+
+## Statement
 
 + If you find our work is useful, please give us 🌟 in GitHub and cite our paper in the following BibTex format:
 
