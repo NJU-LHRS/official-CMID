@@ -3,13 +3,14 @@
 <h5 align="center"><em>Dilxat Muhtar, Xueliang Zhang, Pengfeng Xiao, Zhenshi Li, and Feng Gu</em></h5>
 
 <p align="center">
-  <a href="##News">News</a> |
-  <a href="##Introduction">Introduction</a> |
-  <a href="##Pre-trained Models">Pre-trained Models</a> |
-  <a href="##Usage">Usage</a>|
-  <a href="##Acknowledgement">Acknowledgement</a> |
-  <a href="##Statement">Statement</a>
+  <a href="#news">News</a> |
+  <a href="#introduction">Introduction</a> |
+  <a href="#models">Pre-trained Models</a> |
+  <a href="#usage">Usage</a>|
+  <a href="#acknowledgement">Acknowledgement</a> |
+  <a href="#statement">Statement</a>
 </p >
+
 
 <p align="center">
 <a href="https://arxiv.org/abs/2304.09670"><img src="https://img.shields.io/badge/Paper-arxiv-red"></a>
@@ -49,7 +50,7 @@ This is the official repository for the paper “CMID: A Unified Self-Supervised
 </figure>
 
 
-## Pre-trained Models
+## Models
 
 |    Method    | Backbone  | Pre-trained Dataset | Pre-trained Epochs |                      Pre-trained model                       |                        Backbone Only                         |
 | :----------: | :-------: | :-----------------: | :----------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
