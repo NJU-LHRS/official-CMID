@@ -1,4 +1,4 @@
-## Useage
+## Usage
 
 + The installation, data preparation and useage of mmsegmentation please refer to this [repo](https://github.com/open-mmlab/mmsegmentation).
 
