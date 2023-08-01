@@ -1,0 +1,6 @@
+num_classes: 21
+backbone: swin
+hidden_dim: 1024
+patch_size: 32
+image_size: [224, 224]
+save_size: 56
