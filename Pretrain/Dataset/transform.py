@@ -363,5 +363,5 @@ class ParallelTransform:
         for loc in [location, view_location]:
             locations.append(_location_to_NxN_grid(loc, N = self.size[0] // 32))
 
-        img_dict = dict(img=img, mim_img=mim_img, view=view, mask=mask, locations=locations, view_mim_img=view, view_mask=view_mask)
+        img_dict = dict(img=img, mim_img=mim_img, view=view, mask=mask, locations=locations, view_mim_img=view_mim_img, view_mask=view_mask)
         return img_dict if target is None else [img_dict, seg_map]
