@@ -21,6 +21,8 @@
 
 ## News
 
++ **\[Aug 7 2023\]:** New version has been updated at [arxiv](https://arxiv.org/abs/2304.09670). Fix some mistakes. Please refer to issue [#7](https://github.com/NJU-LHRS/official-CMID/issues/7) and [#14](https://github.com/NJU-LHRS/official-CMID/issues/14) for details.
+
 + **\[May 5 2023\]:** The IEEE TGRS published version can be found at [IEEE Xplore](https://ieeexplore.ieee.org/document/10105625?source=authoralert).
 
 + **\[May 4 2023\]:**  Updated the acknowledgment. Many thanks to [A2MIM](https://github.com/Westlake-AI/A2MIM) and [OpenMixup](https://github.com/Westlake-AI/openmixup) for their awesome implementations of RGB mean input and the Focal Frequency loss!
