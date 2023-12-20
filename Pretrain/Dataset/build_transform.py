@@ -2,16 +2,14 @@ import PIL
 from torchvision import transforms
 from timm.data import create_transform
 from timm.data.constants import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
-from .transform import MaskTransform, ContrastiveTransform, ParallelTransform, EvalTransform
+from .transform import ContrastiveTransform, ParallelTransform, EvalTransform
 
 
 def build_transform(config):
     transform_type = config.transform_type.lower()
-    assert transform_type in ["mask", "contrast", "parallel", "bigearthnet"], "Not Support transform type, Please choose from [mask, \
+    assert transform_type in ["contrast", "parallel"], "Not Support transform type, Please choose from [mask, \
                                                                     contrast, parallel, bigearthnet]"
-    if transform_type == "mask":
-        return MaskTransform(config)
-    elif transform_type == "contrast":
+    if transform_type == "contrast":
         return ContrastiveTransform(config.size)
     elif transform_type == "parallel":
         return ParallelTransform(config)
